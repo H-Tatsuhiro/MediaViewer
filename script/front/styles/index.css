@@ -5,7 +5,7 @@ a:hover {
 }
 /*header*/
 header {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'mentone';
 	color: rgba(146,146,146,1.00);
 	font-size: 16px;
 	font-style: normal;
@@ -13,6 +13,10 @@ header {
 }
 /* Logo placeholder*/
 #logo {
+	position: relative;
+	left: 5px;
+	top: 10px;
+	font-family: 'mentone';
 	float: left;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -39,7 +43,7 @@ header {
 }
 /* Offer text banner*/
 #offer {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'mentone', sans-serif;
 	clear: both;
 	background-color: rgba(246,246,246,1.00);
 	color: rgba(146,146,146,1.00);
@@ -55,7 +59,7 @@ header {
 }
 /* Sidebar */
 #content .sidebar {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'mentone';
 	color: rgba(146,146,146,1.00);
 	float: left;
 	width: 20%;
@@ -155,6 +159,7 @@ header {
 	background-color: rgba(208,207,207,1.00);
 	font-family: source-sans-pro, sans-serif;
 	font-style: normal;
+	width: 100%;
 	font-weight: 200;
 	line-height: 1.8;
 	padding-top: 22px;
@@ -170,12 +175,11 @@ header {
 	padding-left: 4%;
 	padding-right: 2%;
 	color: rgba(255,255,255,1.00);
-	text-align: justify;
+	
 }
 /* Links in footer */
 footer div a {
 	color: rgba(146,146,146,1.00);
-	display: block;
 	text-decoration: none;
 	text-align: center;
 }
@@ -206,6 +210,8 @@ footer div a {
 }
 /* Container for links in footer */
 footer .footerlinks {
+	position: relative;
+	left: 650px;
 	margin-top: -15px;
 }
 
@@ -315,7 +321,7 @@ footer .footerlinks {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	display: inline;
-	padding-right: 35px;
+	padding-right: 100px;
 }
 /* Footer region */
 #mainWrapper footer {
@@ -396,6 +402,8 @@ header #headerLinks a {
 }
 /* Container for links in footer */
 #mainWrapper footer .footerlinks {
+	position: relative;
+	left: 400px;
 	padding-left: 8%;
 }
 /* Main content which excludes the sidebar */

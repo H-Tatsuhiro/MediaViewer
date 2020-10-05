@@ -11,9 +11,9 @@ header('Content-Type: text/html; charset=UTF-8');
 <html>
 <head>
 <meta charset="UTF-8">
-<title>eCommerce template By Adobe Dreamweaver CC</title>
+<title>MediaViewer</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="eCommerceAssets/styles/eCommerceStyle.css" rel="stylesheet" type="text/css">
+<link href="styles/index.css" rel="stylesheet" type="text/css">
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
 <script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
 
@@ -25,30 +25,25 @@ header('Content-Type: text/html; charset=UTF-8');
 <div id="mainWrapper">
   <header>
     <!-- This is the header content. It contains Logo and links -->
-    <div id="logo"> <!-- <img src="logoImage.png" alt="sample logo"> -->
-      <!-- Company Logo text -->
-      Media Viewer (ver 0.1)<a href="#"></a></div>
-	  <div id="headerLinks"><a><?=h($_SESSION['username'])?>さん</a><a href="/logout.php?token=<?=h(generate_token())?>">ログアウト</a><a href="#" title="Item">Item</a></div>
+    <div id="logo">  Media Viewer (ver 0.1)<a href="index.php"></a></div>
+	  <div id="headerLinks"><a><?=h($_SESSION['username'])?>さん</a><a href="/logout.php?token=<?=h(generate_token())?>">ログアウト</a><a href="#" title="Item">アイテム</a></div>
   </header>
   <section id="offer">
     <!-- The offer section displays a banner text for promotions -->
     <h2>このサイトはただいま開発中です。</h2>
-    <p>機能はご利用いただけますが、セキュリティ面の強化などが不十分です。大切なファイルをアップロードしないでください。開発者は一切責任を負いません。</p>
+    <p>サイトのご利用について開発者は一切責任を負いません。「ご利用上の注意」をご確認の上ご利用ください。</p>
   </section>
   <div id="content">
     <section class="sidebar">
       <!-- This adds a sidebar with 1 searchbox,2 menusets, each with 4 links -->
-      <input type="text"  id="search" value="search">
+      <input type="text"  id="search" value="実装中">
       <div id="menubar">
         <nav class="menu">
           <h2><!-- Title for menuset 1 -->撮影場所</h2>
           <hr>
           <ul>
             <!-- List of links under menuset 1 -->
-            <li><a href="#" title="Link">Link 1</a></li>
-            <li><a href="#" title="Link">Link 2</a></li>
-            <li><a href="#" title="Link">Link 3</a></li>
-            <li class="notimp"><!-- notimp class is applied to remove this link from the tablet and phone views --><a href="#"  title="Link">Link 4</a></li>
+            <li class="notimp"><!-- notimp class is applied to remove this link from the tablet and phone views --><a href="#"  title="Link">実装中</a></li>
           </ul>
         </nav>
         <nav class="menu">
@@ -57,10 +52,7 @@ header('Content-Type: text/html; charset=UTF-8');
           <hr>
           <ul>
             <!--List of links under menuset 2 -->
-            <li><a href="#" title="Link">Link 1</a></li>
-            <li><a href="#" title="Link">Link 2</a></li>
-            <li><a href="#" title="Link">Link 3</a></li>
-            <li class="notimp"><!-- notimp class is applied to remove this link from the tablet and phone views --><a href="#" title="Link">Link 4</a></li>
+            <li class="notimp"><!-- notimp class is applied to remove this link from the tablet and phone views --><a href="#" title="Link">実装中</a></li>
           </ul>
         </nav>
       </div>
@@ -68,79 +60,32 @@ header('Content-Type: text/html; charset=UTF-8');
     <section class="mainContent">
       <div class="productRow"><!-- Each product row contains info of 3 elements -->
         <article class="productInfo"><!-- Each individual product description -->
-          <div><img alt="sample" src="eCommerceAssets/images/200x200.png"></div>
+          <div><img alt="sample" src="images/200x200.png"></div>
           <p class="price">ファイル名</p>
-          <p class="productContent">Content holder </p>
-          <input type="button" name="button" value="Buy" class="buyButton">
+          <p class="productContent">アップロード日時</p>
+          <input type="button" name="button" value="アイテムに追加" class="buyButton">
         </article>
         <article class="productInfo"><!-- Each individual product description -->
-          <div><img alt="sample" src="eCommerceAssets/images/200x200.png"></div>
-          <p class="price">$50</p>
-          <p class="productContent">Content holder</p>
-          <input type="button" name="button" value="Buy" class="buyButton">
+          <div><img alt="sample" src="images/200x200.png"></div>
+          <p class="price">ファイル名</p>
+          <p class="productContent">アップロード日時</p>
+          <input type="button" name="button" value="アイテムに追加" class="buyButton">
         </article>
         <article class="productInfo"> <!-- Each individual product description -->
-          <div><img alt="sample" src="eCommerceAssets/images/200x200.png"></div>
-          <p class="price">$50</p>
-          <p class="productContent">Content holder</p>
-          <input type="button" name="button" value="Buy" class="buyButton">
-        </article>
-      </div>
-      <div class="productRow">
-        <!-- Each product row contains info of 3 elements -->
-        <article class="productInfo"> <!-- Each individual product description -->
-          <div><img alt="sample" src="eCommerceAssets/images/200x200.png"></div>
-          <p class="price">$50</p>
-          <p class="productContent">Content holder</p>
-          <input type="button" name="button" value="Buy" class="buyButton">
-        </article>
-        <article class="productInfo"> <!-- Each individual product description -->
-          <div><img alt="sample" src="eCommerceAssets/images/200x200.png"></div>
-          <p class="price">$50</p>
-          <p class="productContent">Content holder</p>
-          <input type="button" name="button" value="Buy" class="buyButton">
-        </article>
-        <article class="productInfo"><!-- Each individual product description -->
-          <div><img alt="sample" src="eCommerceAssets/images/200x200.png"></div>
-          <p class="price">$50</p>
-          <p class="productContent">Content holder</p>
-          <input type="button" name="button" value="Buy" class="buyButton">
-        </article>
-      </div>
-      <div class="productRow">
-        <article class="productInfo"> <!-- Each individual product description -->
-          <div><img alt="sample" src="eCommerceAssets/images/200x200.png"></div>
-          <p class="price">$50</p>
-          <p class="productContent">Content holder</p>
-          <input type="button" name="button" value="Buy" class="buyButton">
-        </article>
-        <article class="productInfo"><!-- Each individual product description -->
-          <div><img alt="sample" src="eCommerceAssets/images/200x200.png"></div>
-          <p class="price">$50</p>
-          <p class="productContent">Content holder</p>
-          <input type="button" name="button" value="Buy" class="buyButton">
-        </article>
-        <article class="productInfo"><!-- Each individual product description -->
-          <div><img alt="sample" src="eCommerceAssets/images/200x200.png"></div>
-          <p class="price">$50</p>
-          <p class="productContent">Content holder</p>
-          <input type="button" name="button" value="Buy" class="buyButton">
+          <div><img alt="sample" src="images/200x200.png"></div>
+          <p class="price">ファイル名</p>
+          <p class="productContent">アップロード日時</p>
+          <input type="button" name="button" value="アイテムに追加" class="buyButton">
         </article>
       </div>
     </section>
   </div>
   <footer>
     <!-- This is the footer with default 3 divs -->
-    <div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam varius sem neque. Integer ornare.</p>
-    </div>
-    <div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam varius sem neque. Integer ornare.</p>
-    </div>
     <div class="footerlinks">
-      <p><a href="#" title="Link">利用規約 </a></p>
-      <p><a href="#" title="Link">お問い合わせ</a></p>
-      <p><a href="#" title="Link">開発者</a></p>
+      <p><a href="#" title="Link">ご利用上の注意 </a></p>
+      <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSe_2R3wyzbkkEbxmX0IjBXF6Tg-9euFT7qqsHUMI5vSUoBjRQ/viewform" title="Link">お問い合わせ</a></p>
+      <p><a href="https://www.h-tatsu.com" title="Link">開発者</a></p>
     </div>
   </footer>
 </div>

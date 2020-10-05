@@ -72,7 +72,7 @@ header('Content-Type: text/html; charset=UTF-8');
   <footer>
     <!-- This is the footer with default 3 divs -->
     <div class="footerlinks">
-      <p><a href="#" title="Link">利用規約 </a></p>
+      <p><a href="https://github.com/H-Tatsuhiro/MediaViewer/blob/master/script/front/terms.md" title="Link">ご利用上の注意</a></p>
       <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSe_2R3wyzbkkEbxmX0IjBXF6Tg-9euFT7qqsHUMI5vSUoBjRQ/viewform" title="Link">お問い合わせ</a></p>
       <p><a href="https://www.h-tatsu.com" title="Link">開発者</a></p>
     </div>

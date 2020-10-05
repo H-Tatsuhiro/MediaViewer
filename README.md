@@ -14,3 +14,8 @@ Please login below user and password. ex. {username, pass}
      
            
 You can upload image file and download one.
+
+### Development tools
+
+CLion 2020.3 EAP (installed Rust plugin)   
+Adobe Dreamweaver

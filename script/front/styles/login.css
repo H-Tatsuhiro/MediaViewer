@@ -54,43 +54,12 @@ header {
 	overflow: auto;
 	padding-top: 29px;
 }
-/* Sidebar */
-#content .sidebar {
-	font-family: 'mentone';
-	color: rgba(146,146,146,1.00);
-	float: left;
-	width: 20%;
-	padding-left: 3%;
-	padding-right: 3%;
-	text-align: center;
-	background-color: rgba(246,246,246,1.00);
-	padding-top: 36px;
-	height: 784px;
-}
 /* main content of the site */
 #content .mainContent {
 	float: left;
 	width: 70%;
 	text-align: center;
 	padding-left: 4%;
-}
-/*menubar's properties for menus in sidebar */
-#content .sidebar #menubar {
-	text-align: left;
-	color: rgba(146,146,146,1.00);
-	position: relative;
-	left: 0%;
-}
-/* Search field in sidebar */
-#content .sidebar #search {
-	width: 100%;
-	border-radius: 0px;
-	height: 42px;
-	text-align: center;
-	color: rgba(208,207,207,1.00);
-	font-size: 14px;
-	;
-	margin-bottom: 21px;
 }
 /* Whole page content */
 #mainWrapper {
@@ -122,7 +91,7 @@ header {
 }
 
 /* footer */
-#mainWrapper footer {
+footer {
 	clear: both;
 	overflow: auto;
 	background-color: rgba(208,207,207,1.00);
@@ -149,125 +118,8 @@ header {
 /* Links in footer */
 footer div a {
 	color: rgba(146,146,146,1.00);
-	display: block;
 	text-decoration: none;
 	text-align: center;
-}
-/* Product's images in catalog */
-.productInfo div img {
-	width: 100%;
-}
-/*Links in sidebar */
-.sidebar #menubar .menu ul li a {
-	color: rgba(146,146,146,1.00);
-	text-decoration: none;
-}
-.sidebar #menubar .menu ul li a:hover {
-	color: rgba(107,97,97,1.00);
-	text-decoration: none;
-}
-/* Menu headings in sidebar */
-#menubar .menu h2 {
-	font-size: 14px;
-}
-/*Links under menus in sidebar */
-#menubar .menu ul li a {
-	font-size: 14px;
-}
-/* Menus in sidebar */
-.sidebar #menubar .menu {
-	margin-bottom: 29px;
-}
-/* Container for links in footer */
-footer .footerlinks {
-	margin-top: -15px;
-	position: relative;
-	left: 500px;
-}
-
-/* Media query for tablets */
-@media screen and (max-width:700px) {
-/* search field in sidebar */
-#content .sidebar #search {
-	display: none;
-}
-/* sidebar */
-#content .sidebar {
-	float: none;
-	width: 100%;
-	height: auto;
-	overflow: auto;
-	padding-left: 12%;
-	padding-top: 0px;
-}
-/* horizontal separators in sidebar */
-#content .sidebar hr {
-	display: none;
-}
-/*The sidebar and maincontent of page */
-#content {
-	position: relative;
-	top: -22px;
-	width: 100%;
-	overflow: hidden;
-}
-/*menu headings in sidebar */
-#menubar .menu h2 {
-	display: inline;
-	font-size: medium;
-	padding-right: 6%;
-}
-/* Unordered List of links */
-#menubar .menu ul {
-	display: inline;
-}
-/*list elements */
-#menubar .menu ul li {
-	display: inline;
-	font-size: medium;
-	padding-left: 0%;
-	padding-right: 3%;
-}
-/*The link to be hidden in tablet view */
-.sidebar #menubar .menu ul .notimp {
-	display: none;
-}
-/* menus in sidebar */
-.sidebar #menubar .menu {
-	width: 100%;
-	text-align: center;
-	position: relative;
-	top: 16px;
-}
-/*menubar in sidebar */
-#content .sidebar #menubar {
-	position: relative;
-	left: -7%;
-	overflow: hidden;
-	width: 95%;
-	padding-top: 0px;
-}
-/* offer banners content */
-#mainWrapper #offer p {
-	font-size: small;
-}
-/* main content region of page */
-#mainWrapper #content .mainContent {
-	overflow: hidden;
-	width: 95%;
-	margin-top: 40px;
-}
-/* Prices of products in catalog view */
-.productRow .productInfo .price {
-	font-size: 19px;
-}
-/* Content holders in catalog view */
-.productRow .productInfo .productContent {
-	font-size: 16px;
-}
-/* Buy buttons in catalog view */
-.productRow .productInfo .buyButton {
-	font-size: 15px;
 }
 /* Container for links in footer */
 #mainWrapper footer .footerlinks {
@@ -313,6 +165,100 @@ footer .footerlinks p {
 }
 }
 
+/* Media query for tablets */
+@media screen and (max-width:700px) {
+/* search field in sidebar */
+#content .sidebar #search {
+	display: none;
+}
+/* sidebar */
+#content .sidebar {
+	float: none;
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	padding-left: 12%;
+	padding-top: 0px;
+}
+/* horizontal separators in sidebar */
+#content .sidebar hr {
+	display: none;
+}
+/*The sidebar and maincontent of page */
+#content {
+	position: relative;
+	top: -22px;
+	width: 100%;
+	overflow: hidden;
+}
+/*menubar in sidebar */
+#content .sidebar #menubar {
+	position: relative;
+	left: -7%;
+	overflow: hidden;
+	width: 95%;
+	padding-top: 0px;
+}
+/* offer banners content */
+#mainWrapper #offer p {
+	font-size: small;
+}
+/* main content region of page */
+#mainWrapper #content .mainContent {
+	overflow: hidden;
+	width: 95%;
+	margin-top: 40px;
+}
+/* Container for links in footer */
+#mainWrapper footer .footerlinks {
+	float: none;
+	width: 100%;
+	position: relative;
+	top: 17px;
+	clear: both;
+	text-align: center;
+	left: 450px;
+	padding-bottom: 19px;
+}
+/* Container for each footer divisions */
+#mainWrapper footer div {
+	width: 44%;
+	text-align: justify;
+	font-size: 15px;
+}
+/* Links in footer */
+.footerlinks p a {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	display: inline;
+	padding-right: 100px;
+}
+/* Footer region */
+#mainWrapper footer {
+	padding-left: 16px;
+	overflow: hidden;
+}
+/* Links in header */
+header #headerLinks a {
+	padding-left: 0px;
+	padding-right: 30px;
+}
+/* Offer- Text banner */
+#mainWrapper #offer {
+	padding-left: 22%;
+}
+/* Paragraphs in footer */
+footer .footerlinks p {
+	display: inline;
+}
+	
+footer .footerlinks {
+	position: relative;
+	left: 650px;
+	margin-top: -15px;
+}
+}
+
 /*media query for small screen devices */
 @media screen and (max-width:480px) {
 /*Container for links in header */
@@ -338,17 +284,6 @@ header #headerLinks a {
 	padding-left: 0px;
 	text-align: center;
 }
-/* Menubar in sidebar */
-#content .sidebar #menubar {
-	position: relative;
-	left: -8%;
-	text-align: center;
-}
-/*Menu headings in sidebar */
-#menubar .menu h2 {
-	width: 100%;
-	display: block;
-}
 /* Each product in catalog view */
 .mainContent .productRow .productInfo {
 	width: 100%;
@@ -372,8 +307,8 @@ header #headerLinks a {
 }
 /* Container for links in footer */
 #mainWrapper footer .footerlinks {
-	position: flex;
-	left : 400px;
+	position: relative;
+	left: 400px;
 	padding-left: 8%;
 }
 /* Main content which excludes the sidebar */

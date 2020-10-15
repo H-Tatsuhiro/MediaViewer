@@ -26,7 +26,7 @@ header('Content-Type: text/html; charset=UTF-8');
   <header>
     <!-- This is the header content. It contains Logo and links -->
     <div id="logo">  Media Viewer (ver 0.1)<a href="index.php"></a></div>
-	  <div id="headerLinks"><a><?=h($_SESSION['username'])?>さん</a><a href="/logout.php?token=<?=h(generate_token())?>">ログアウト</a><a href="#" title="Item">アイテム</a></div>
+          <div id="headerLinks"><a><?=h($_SESSION['username'])?>さん</a><a href="/logout.php?token=<?=h(generate_token())?>">ログアウト</a><a href="#" title="Item">アイiv>
   </header>
   <section id="offer">
     <!-- The offer section displays a banner text for promotions -->

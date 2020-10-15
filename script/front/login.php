@@ -55,20 +55,20 @@ header('Content-Type: text/html; charset=UTF-8');
     <p>サイトのご利用について開発者は一切責任を負いません。利用規約をご確認の上ご利用ください。</p>
   </section>
 
-	<div class="loginform">
-		
-	<form method="post" action="">
-   	 	ユーザ名: <input id="tform" type="text" name="username" value="">
-    	パスワード: <input id = "tform" type="password" name="password" value="">
- 	   <input type="hidden" name="token" value="<?=h(generate_token())?>">
-   	  <input id="tsubmit" type="submit" value="ログイン">
+        <div class="loginform">
+
+        <form method="post" action="">
+                ユーザ名: <input id="tform" type="text" name="username" value="">
+        パスワード: <input id = "tform" type="password" name="password" value="">
+           <input type="hidden" name="token" value="<?=h(generate_token())?>">
+          <input id="tsubmit" type="submit" value="ログイン">
     </form>
     <?php if (http_response_code() === 403): ?>
      <p style="color: red;">ユーザ名またはパスワードが違います</p>
     <?php endif; ?>
-	</div>
+        </div>
 
-	
+
   <footer>
     <!-- This is the footer with default 3 divs -->
     <div class="footerlinks">
@@ -79,4 +79,4 @@ header('Content-Type: text/html; charset=UTF-8');
   </footer>
 </div>
 </body>
-</html>
+</html>[
